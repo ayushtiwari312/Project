@@ -23,13 +23,13 @@ export class LanguageService {
       'nav.gallery': 'Gallery',
       
       // Home page
-      'home.hero.title': 'Welcome to Sudhir Jan Seva Kendra',
+      'home.hero.title': 'Welcome to Sarthak Digital Seva',
       'home.hero.subtitle': 'Serving the community with dedication and care',
       'home.hero.cta': 'Our Services',
       'home.services.title': 'Our Services',
       'home.services.viewAll': 'View All Services',
       'home.about.title': 'About Us',
-      'home.about.description': 'Sudhir Jan Seva Kendra is dedicated to providing essential services to citizens, making government services more accessible to the common people.',
+      'home.about.description': 'Sarthak Digital Seva is dedicated to providing essential services to citizens, making government services more accessible to the common people.',
       'home.about.readMore': 'Read More',
       'home.testimonials.title': 'What People Say',
       'home.blog.title': 'Latest Updates',
@@ -38,7 +38,7 @@ export class LanguageService {
       'home.contact.cta': 'Contact Us',
       
       // About page
-      'about.title': 'About Sudhir Jan Seva Kendra',
+      'about.title': 'About Sarthak Digital Seva',
       'about.subtitle': 'Our journey of service and commitment',
       'about.mission.title': 'Our Mission',
       'about.mission.description': 'To bridge the gap between government services and citizens by providing efficient, transparent, and accessible service delivery.',
@@ -112,13 +112,13 @@ export class LanguageService {
       'nav.gallery': 'गैलरी',
       
       // Home page
-      'home.hero.title': 'सुधीर जन सेवा केंद्र में आपका स्वागत है',
+      'home.hero.title': 'सार्थक डिजिटल सेवा में आपका स्वागत है',
       'home.hero.subtitle': 'समर्पण और देखभाल के साथ समुदाय की सेवा',
       'home.hero.cta': 'हमारी सेवाएं',
       'home.services.title': 'हमारी सेवाएं',
       'home.services.viewAll': 'सभी सेवाएं देखें',
       'home.about.title': 'हमारे बारे में',
-      'home.about.description': 'सुधीर जन सेवा केंद्र नागरिकों को आवश्यक सेवाएं प्रदान करने के लिए समर्पित है, जो सरकारी सेवाओं को आम लोगों के लिए अधिक सुलभ बनाता है।',
+      'home.about.description': 'सार्थक डिजिटल सेवा केंद्र नागरिकों को आवश्यक सेवाएं प्रदान करने के लिए समर्पित है, जो सरकारी सेवाओं को आम लोगों के लिए अधिक सुलभ बनाता है।',
       'home.about.readMore': 'और पढ़ें',
       'home.testimonials.title': 'लोग क्या कहते हैं',
       'home.blog.title': 'नवीनतम अपडेट',
@@ -127,7 +127,7 @@ export class LanguageService {
       'home.contact.cta': 'संपर्क करें',
       
       // About page
-      'about.title': 'सुधीर जन सेवा केंद्र के बारे में',
+      'about.title': 'सार्थक डिजिटल सेवा केंद्र के बारे में',
       'about.subtitle': 'सेवा और प्रतिबद्धता की हमारी यात्रा',
       'about.mission.title': 'हमारा मिशन',
       'about.mission.description': 'कुशल, पारदर्शी और सुलभ सेवा वितरण प्रदान करके सरकारी सेवाओं और नागरिकों के बीच की खाई को पाटना।',

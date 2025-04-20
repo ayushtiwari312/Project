@@ -9,145 +9,274 @@ export class ContentService {
   private services: ServiceItem[] = [
     {
       id: 1,
-      title: 'Aadhaar Card Services',
-      titleHi: 'आधार कार्ड सेवाएं',
-      description: 'Aadhaar enrollment, update, and printing services.',
-      descriptionHi: 'आधार नामांकन, अपडेट और प्रिंटिंग सेवाएं।',
-      icon: 'id-card',
-      category: 'Identity',
-      categoryHi: 'पहचान',
-      image: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      title: 'Bank Account Opening',
+      titleHi: 'बैंक खाता खोलना',
+      description: 'Assistance in opening bank accounts with various banks, including documentation and verification.',
+      descriptionHi: 'विभिन्न बैंकों में खाता खोलने में सहायता, दस्तावेज़ीकरण और सत्यापन सहित।',
+      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <path d="M32 4L4 16v4h56v-4L32 4z" fill="#4A4A4A"/>
+        <rect x="8" y="20" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="16" y="20" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="24" y="20" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="32" y="20" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="40" y="20" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="48" y="20" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="4" y="52" width="56" height="6" fill="#4A4A4A"/>
+      </svg>`,
+      category: 'Banking',
+      categoryHi: 'बैंकिंग',
+      image: 'https://images.unsplash.com/photo-1601597111158-2fceff292cdc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 2,
-      title: 'PAN Card Services',
-      titleHi: 'पैन कार्ड सेवाएं',
-      description: 'Apply for new PAN card, corrections, and reprinting.',
-      descriptionHi: 'नए पैन कार्ड के लिए आवेदन, सुधार और रीप्रिंटिंग।',
-      icon: 'credit-card',
-      category: 'Identity',
-      categoryHi: 'पहचान',
+      title: 'Aadhaar Enabled Payment System',
+      titleHi: 'आधार सक्षम भुगतान प्रणाली',
+      description: 'Secure transactions and payments using Aadhaar biometric authentication.',
+      descriptionHi: 'आधार बायोमेट्रिक प्रमाणीकरण का उपयोग करके सुरक्षित लेनदेन और भुगतान।',
+      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="30" stroke="#4A4A4A" stroke-width="4"/>
+        <path d="M20 32h24M32 20v24" stroke="#7D7D7D" stroke-width="4"/>
+      </svg>`,
+      category: 'Payments',
+      categoryHi: 'भुगतान',
       image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 3,
-      title: 'Passport Services',
-      titleHi: 'पासपोर्ट सेवाएं',
-      description: 'Passport application assistance and document verification.',
-      descriptionHi: 'पासपोर्ट आवेदन सहायता और दस्तावेज सत्यापन।',
-      icon: 'passport',
-      category: 'Travel',
-      categoryHi: 'यात्रा',
-      image: 'https://images.unsplash.com/photo-1568321612103-3281d10b89c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      title: 'Income Certificate',
+      titleHi: 'आय प्रमाण पत्र',
+      description: 'Assistance in applying for and obtaining income certificates from relevant authorities.',
+      descriptionHi: 'संबंधित अधिकारियों से आय प्रमाण पत्र प्राप्त करने में सहायता।',
+      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <rect width="64" height="64" fill="white"/>
+        <polygon points="32,4 4,16 60,16" fill="#4A4A4A"/>
+        <rect x="10" y="16" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="20" y="16" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="30" y="16" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="40" y="16" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="50" y="16" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="4" y="48" width="56" height="6" fill="#4A4A4A"/>
+        <text x="32" y="62" font-size="6" text-anchor="middle" fill="#333">BANK</text>
+      </svg>`,
+      category: 'Certificates',
+      categoryHi: 'प्रमाणपत्र',
+      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 4,
-      title: 'Digital Certificate',
-      titleHi: 'डिजिटल प्रमाणपत्र',
-      description: 'Digital signature certificates for e-filing and verification.',
-      descriptionHi: 'ई-फाइलिंग और सत्यापन के लिए डिजिटल हस्ताक्षर प्रमाणपत्र।',
-      icon: 'file-signature',
-      category: 'Digital',
-      categoryHi: 'डिजिटल',
-      image: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      title: 'Caste Certificate',
+      titleHi: 'जाति प्रमाण पत्र',
+      description: 'Support in obtaining caste certificates with proper documentation and verification.',
+      descriptionHi: 'उचित दस्तावेज़ीकरण और सत्यापन के साथ जाति प्रमाण पत्र प्राप्त करने में सहायता।',
+      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <rect x="8" y="8" width="48" height="48" rx="4" stroke="#4A4A4A" stroke-width="4"/>
+        <path d="M16 20h32M16 28h32M16 36h20" stroke="#7D7D7D" stroke-width="4"/>
+      </svg>`,
+      category: 'Certificates',
+      categoryHi: 'प्रमाणपत्र',
+      image: 'https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 5,
-      title: 'Voter ID Services',
-      titleHi: 'वोटर आईडी सेवाएं',
-      description: 'New voter ID application, corrections, and updates.',
-      descriptionHi: 'नए वोटर आईडी आवेदन, सुधार और अपडेट।',
-      icon: 'vote-yea',
-      category: 'Identity',
-      categoryHi: 'पहचान',
-      image: 'https://images.unsplash.com/photo-1540126034813-121bf29033d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 6,
-      title: 'Banking Services',
-      titleHi: 'बैंकिंग सेवाएं',
-      description: 'Bank account opening, loan application assistance.',
-      descriptionHi: 'बैंक खाता खोलना, ऋण आवेदन सहायता।',
-      icon: 'university',
-      category: 'Finance',
-      categoryHi: 'वित्त',
-      image: 'https://images.unsplash.com/photo-1601597111158-2fceff292cdc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 7,
-      title: 'Insurance Services',
-      titleHi: 'बीमा सेवाएं',
-      description: 'Life, health, vehicle insurance application and claims.',
-      descriptionHi: 'जीवन, स्वास्थ्य, वाहन बीमा आवेदन और दावे।',
-      icon: 'shield-alt',
-      category: 'Finance',
-      categoryHi: 'वित्त',
+      title: 'Domicile Certificate',
+      titleHi: 'अधिवास प्रमाण पत्र',
+      description: 'Assistance in applying for domicile certificates with required documentation.',
+      descriptionHi: 'आवश्यक दस्तावेजों के साथ अधिवास प्रमाण पत्र के लिए आवेदन में सहायता।',
+      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
+        <path d="M8 28L32 8l24 20v28a4 4 0 01-4 4H12a4 4 0 01-4-4V28z" fill="#4A4A4A"/>
+        <rect x="24" y="36" width="16" height="20" fill="#7D7D7D"/>
+      </svg>`,
+      category: 'Certificates',
+      categoryHi: 'प्रमाणपत्र',
       image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
     },
     {
+      id: 6,
+      title: 'Old Age Pension',
+      titleHi: 'वृद्धावस्था पेंशन',
+      description: 'Support in applying for and processing old age pension applications.',
+      descriptionHi: 'वृद्धावस्था पेंशन आवेदनों को आवेदन और प्रसंस्करण में सहायता।',
+      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
+        <circle cx="32" cy="24" r="12" fill="#7D7D7D"/>
+        <rect x="24" y="36" width="16" height="20" rx="2" fill="#4A4A4A"/>
+      </svg>`,
+      category: 'Pension',
+      categoryHi: 'पेंशन',
+      image: 'https://images.unsplash.com/photo-1577412647305-991150c7d163?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      id: 7,
+      title: 'Widow Pension',
+      titleHi: 'विधवा पेंशन',
+      description: 'Assistance in widow pension application and documentation process.',
+      descriptionHi: 'विधवा पेंशन आवेदन और दस्तावेज़ीकरण प्रक्रिया में सहायता।',
+      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <rect width="64" height="64" fill="white"/>
+        <polygon points="32,4 4,16 60,16" fill="#4A4A4A"/>
+        <rect x="10" y="16" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="20" y="16" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="30" y="16" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="40" y="16" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="50" y="16" width="4" height="32" fill="#7D7D7D"/>
+        <rect x="4" y="48" width="56" height="6" fill="#4A4A4A"/>
+        <text x="32" y="62" font-size="6" text-anchor="middle" fill="#333">BANK</text>
+      </svg>`,
+      category: 'Pension',
+      categoryHi: 'पेंशन',
+      image: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    },
+    {
       id: 8,
-      title: 'Online Bill Payments',
-      titleHi: 'ऑनलाइन बिल भुगतान',
-      description: 'Electricity, water, mobile, DTH recharge services.',
-      descriptionHi: 'बिजली, पानी, मोबाइल, डीटीएच रिचार्ज सेवाएं।',
-      icon: 'file-invoice',
-      category: 'Payments',
-      categoryHi: 'भुगतान',
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+      title: 'Online Government Services',
+      titleHi: 'ऑनलाइन सरकारी सेवाएं',
+      description: 'Various online government services and documentation assistance.',
+      descriptionHi: 'विभिन्न ऑनलाइन सरकारी सेवाएं और दस्तावेज़ीकरण सहायता।',
+      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
+        <rect x="12" y="16" width="40" height="32" rx="4" stroke="#4A4A4A" stroke-width="4"/>
+        <path d="M20 28h24M20 36h24" stroke="#7D7D7D" stroke-width="4"/>
+      </svg>`,
+      category: 'Digital',
+      categoryHi: 'डिजिटल',
+      image: 'https://images.unsplash.com/photo-1577412647305-991150c7d163?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
     }
   ];
+  
 
   private blogs: BlogPost[] = [
     {
       id: 1,
-      title: 'New Aadhaar Services Available',
-      titleHi: 'नई आधार सेवाएं उपलब्ध',
-      summary: 'Learn about the latest Aadhaar services now available at our center.',
-      summaryHi: 'हमारे केंद्र पर अब उपलब्ध नवीनतम आधार सेवाओं के बारे में जानें।',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.',
-      contentHi: 'लोरेम इप्सम डोलर सिट अमेट, कॉन्सेक्टेटुर एडिपिसिंग एलिट। नुल्ला क्वाम वेलिट, वल्पुटेट यू फैरेट्रा नेक, मैटिस एसी नेक्वे। दुइस वल्पुटेट कोम्मोडो लेक्टस, एसी ब्लंडिट एलिट टिंसिडुंट आईडी।',
-      author: 'Rajesh Kumar',
-      authorHi: 'राजेश कुमार',
-      date: '2023-06-15',
-      category: 'Services',
-      categoryHi: 'सेवाएं',
-      image: 'https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      tags: ['Aadhaar', 'Identity', 'Government'],
-      tagsHi: ['आधार', 'पहचान', 'सरकार']
+      title: 'Widow Pension Scheme in Uttar Pradesh: A Lifeline for Marginalized Women',
+      titleHi: 'उत्तर प्रदेश में विधवा पेंशन योजना: उपेक्षित महिलाओं के लिए जीवनरेखा',
+      summary: 'Learn how widowed women in Uttar Pradesh can benefit from the Widow Pension Scheme run by the government.',
+      summaryHi: 'जानिए कैसे उत्तर प्रदेश में विधवा महिलाएं सरकारी विधवा पेंशन योजना का लाभ उठा सकती हैं।',
+      content: `The Widow Pension Scheme in Uttar Pradesh is a vital government initiative aimed at supporting women who have lost their husbands and are left without a stable source of income. Implemented under the National Social Assistance Programme (NSAP), this scheme ensures that widows receive a monthly pension to help them meet their basic needs.
+  
+  Eligible applicants must be between 18 and 60 years of age, belong to a Below Poverty Line (BPL) household, and must not be availing other pensions. Required documents include the husband's death certificate, applicant's Aadhaar card, income proof, and a bank passbook for direct benefit transfer.
+  
+  Applications can be submitted online through the official UP government portal [sspy-up.gov.in](http://sspy-up.gov.in) or via Common Service Centers (CSCs). Once verified by the Gram Panchayat or Nagar Palika and approved by the Block office, the pension amount of Rs. 500 is transferred monthly to the beneficiary's bank account.
+  
+  This financial support helps reduce the dependency of widowed women on their families, enabling them to live with dignity. The government is continuously working to digitize and simplify the process, ensuring timely payments and transparency.
+  
+  Widows are encouraged to keep all documents updated and track their application status online. With this support, many women have been able to stand on their feet, pursue small livelihoods, and support their children's education.`,
+      contentHi: `उत्तर प्रदेश में विधवा पेंशन योजना एक महत्वपूर्ण सरकारी पहल है, जिसका उद्देश्य उन महिलाओं को सहायता प्रदान करना है जिन्होंने अपने पति को खो दिया है और जिनके पास स्थिर आय का कोई स्रोत नहीं है। यह योजना राष्ट्रीय सामाजिक सहायता कार्यक्रम (NSAP) के अंतर्गत चलाई जाती है और विधवाओं को मासिक पेंशन प्रदान करती है जिससे वे अपनी बुनियादी आवश्यकताओं को पूरा कर सकें।
+  
+  इस योजना के लिए पात्रता प्राप्त करने के लिए आवेदक की आयु 18 से 60 वर्ष के बीच होनी चाहिए और वह बीपीएल परिवार से होनी चाहिए। साथ ही किसी अन्य सरकारी पेंशन योजना का लाभ नहीं लिया जा रहा होना चाहिए। आवश्यक दस्तावेजों में पति का मृत्यु प्रमाण पत्र, आधार कार्ड, आय प्रमाण पत्र और बैंक पासबुक शामिल हैं।
+  
+  आवेदन [sspy-up.gov.in](http://sspy-up.gov.in) पोर्टल या नजदीकी कॉमन सर्विस सेंटर (CSC) के माध्यम से किया जा सकता है। ग्राम पंचायत या नगर पालिका द्वारा सत्यापन के बाद और खंड कार्यालय द्वारा अनुमोदन के बाद, 500 रुपये की मासिक पेंशन लाभार्थी के बैंक खाते में सीधे ट्रांसफर की जाती है।
+  
+  यह आर्थिक सहायता विधवाओं को आत्मनिर्भर बनने और सम्मान के साथ जीवन जीने की दिशा में एक कदम है। सरकार प्रक्रिया को डिजिटल और पारदर्शी बनाकर समय पर भुगतान सुनिश्चित कर रही है।
+  
+  विधवाओं को सलाह दी जाती है कि वे अपने सभी दस्तावेजों को अद्यतन रखें और आवेदन की स्थिति ऑनलाइन ट्रैक करें। इस योजना के माध्यम से कई महिलाएं छोटे व्यवसाय शुरू कर चुकी हैं और अपने बच्चों की शिक्षा में सहयोग कर पा रही हैं।`,
+      author: 'Ayush Tiwari',
+      authorHi: 'Ayush Tiwari',
+      date: '2025-04-20',
+      category: 'Pension',
+      categoryHi: 'पेंशन',
+      image: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      tags: ['Widow', 'Pension', 'UP Government'],
+      tagsHi: ['विधवा', 'पेंशन', 'उत्तर प्रदेश']
     },
     {
-      id: 2,
-      title: 'Digital Payments Made Easy',
-      titleHi: 'डिजिटल भुगतान आसान बनाया गया',
-      summary: 'A guide to using various digital payment options at our service center.',
-      summaryHi: 'हमारे सेवा केंद्र पर विभिन्न डिजिटल भुगतान विकल्पों का उपयोग करने के लिए एक मार्गदर्शक।',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.',
-      contentHi: 'लोरेम इप्सम डोलर सिट अमेट, कॉन्सेक्टेटुर एडिपिसिंग एलिट। नुल्ला क्वाम वेलिट, वल्पुटेट यू फैरेट्रा नेक, मैटिस एसी नेक्वे। दुइस वल्पुटेट कोम्मोडो लेक्टस, एसी ब्लंडिट एलिट टिंसिडुंट आईडी।',
+      id: 5,
+      title: 'How to Apply for a Caste Certificate in Uttar Pradesh',
+      titleHi: 'उत्तर प्रदेश में जाति प्रमाण पत्र के लिए आवेदन कैसे करें',
+      summary: 'A step-by-step guide to applying for a caste certificate online and offline in UP.',
+      summaryHi: 'उत्तर प्रदेश में जाति प्रमाण पत्र के लिए ऑनलाइन और ऑफलाइन आवेदन करने की चरण-दर-चरण मार्गदर्शिका।',
+      content: 'Detailed 500-word English content here...',
+      contentHi: 'यहाँ हिंदी में 500 शब्दों की पूरी सामग्री जाएगी...',
+      author: 'Aarti Sharma',
+      authorHi: 'आरती शर्मा',
+      date: '2025-04-20',
+      category: 'Certificates',
+      categoryHi: 'प्रमाणपत्र',
+      image: 'https://images.unsplash.com/photo-1581090700227-1e37b1904181?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      tags: ['Caste', 'Certificate', 'UP'],
+      tagsHi: ['जाति', 'प्रमाण पत्र', 'उत्तर प्रदेश']
+    },
+    {
+      id: 6,
+      title: 'Indira Gandhi Widow Pension Scheme in UP: Process & Benefits',
+      titleHi: 'उत्तर प्रदेश में इंदिरा गांधी विधवा पेंशन योजना: प्रक्रिया और लाभ',
+      summary: 'Details on how widows in Uttar Pradesh can apply for the central pension scheme under NSAP.',
+      summaryHi: 'उत्तर प्रदेश में महिलाएं इस राष्ट्रीय विधवा पेंशन योजना के लिए कैसे आवेदन कर सकती हैं, इसकी जानकारी।',
+      content: 'Detailed 500-word English content here...',
+      contentHi: 'यहाँ हिंदी में 500 शब्दों की पूरी सामग्री जाएगी...',
+      author: 'Sudhir Patel',
+      authorHi: 'सुधीर पटेल',
+      date: '2025-04-20',
+      category: 'Pension',
+      categoryHi: 'पेंशन',
+      image: 'https://images.unsplash.com/photo-1613212132709-29c48d0c73c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      tags: ['Indira Gandhi', 'Widow Pension', 'NSAP'],
+      tagsHi: ['इंदिरा गांधी', 'विधवा पेंशन', 'योजना']
+    },
+    {
+      id: 7,
+      title: 'Benefits of Caste Certificate for Jobs & Education in UP',
+      titleHi: 'उत्तर प्रदेश में नौकरी और शिक्षा के लिए जाति प्रमाण पत्र के लाभ',
+      summary: 'Understand how SC/ST/OBC certificates open access to reserved opportunities in education and employment.',
+      summaryHi: 'जानिए कैसे जाति प्रमाण पत्र आरक्षित अवसरों का लाभ दिलाते हैं।',
+      content: 'Detailed 500-word English content here...',
+      contentHi: 'यहाँ हिंदी में 500 शब्दों की पूरी सामग्री जाएगी...',
       author: 'Priya Singh',
       authorHi: 'प्रिया सिंह',
-      date: '2023-05-22',
-      category: 'Digital',
-      categoryHi: 'डिजिटल',
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      tags: ['Digital', 'Payments', 'Technology'],
-      tagsHi: ['डिजिटल', 'भुगतान', 'तकनीक']
+      date: '2025-04-20',
+      category: 'Certificates',
+      categoryHi: 'प्रमाणपत्र',
+      image: 'https://images.unsplash.com/photo-1617862432906-d44d28c15f46?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      tags: ['Reservation', 'Jobs', 'Education'],
+      tagsHi: ['आरक्षण', 'नौकरी', 'शिक्षा']
     },
     {
-      id: 3,
-      title: 'Passport Application Process Simplified',
-      titleHi: 'पासपोर्ट आवेदन प्रक्रिया सरल बनाई गई',
-      summary: 'Step-by-step guide to applying for a passport with our assistance.',
-      summaryHi: 'हमारी सहायता से पासपोर्ट के लिए आवेदन करने के लिए चरण-दर-चरण मार्गदर्शक।',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.',
-      contentHi: 'लोरेम इप्सम डोलर सिट अमेट, कॉन्सेक्टेटुर एडिपिसिंग एलिट। नुल्ला क्वाम वेलिट, वल्पुटेट यू फैरेट्रा नेक, मैटिस एसी नेक्वे। दुइस वल्पुटेट कोम्मोडो लेक्टस, एसी ब्लंडिट एलिट टिंसिडुंट आईडी।',
-      author: 'Vikram Sharma',
-      authorHi: 'विक्रम शर्मा',
-      date: '2023-04-10',
-      category: 'Travel',
-      categoryHi: 'यात्रा',
-      image: 'https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      tags: ['Passport', 'Travel', 'Documents'],
-      tagsHi: ['पासपोर्ट', 'यात्रा', 'दस्तावेज़']
+      id: 8,
+      title: 'Common Mistakes in Widow Pension Applications (UP Focus)',
+      titleHi: 'विधवा पेंशन आवेदन में आम गलतियाँ (उत्तर प्रदेश विशेष)',
+      summary: 'Avoid common errors and ensure your widow pension application gets approved on time.',
+      summaryHi: 'सामान्य गलतियों से बचें और सुनिश्चित करें कि आपका पेंशन आवेदन समय पर स्वीकृत हो।',
+      content: 'Detailed 500-word English content here...',
+      contentHi: 'यहाँ हिंदी में 500 शब्दों की पूरी सामग्री जाएगी...',
+      author: 'Amit Verma',
+      authorHi: 'अमित वर्मा',
+      date: '2025-04-20',
+      category: 'Pension',
+      categoryHi: 'पेंशन',
+      image: 'https://images.unsplash.com/photo-1577412647305-991150c7d163?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      tags: ['Application', 'Mistakes', 'Widow'],
+      tagsHi: ['आवेदन', 'गलतियाँ', 'विधवा']
+    },
+    {
+      id: 9,
+      title: 'Digital Centers Empowering Widows in Rural Uttar Pradesh',
+      titleHi: 'ग्रामीण उत्तर प्रदेश में विधवाओं को सशक्त बना रहे डिजिटल केंद्र',
+      summary: 'Learn how Sarthak Centers and CSCs are helping women avail pensions and services easily.',
+      summaryHi: 'जानें कैसे सार्थक केंद्र और CSC महिलाओं को पेंशन और सरकारी सेवाएं लेने में मदद कर रहे हैं।',
+      content: 'Detailed 500-word English content here...',
+      contentHi: 'यहाँ हिंदी में 500 शब्दों की पूरी सामग्री जाएगी...',
+      author: 'Rajesh Kumar',
+      authorHi: 'राजेश कुमार',
+      date: '2025-04-20',
+      category: 'Digital',
+      categoryHi: 'डिजिटल',
+      image: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      tags: ['Digital India', 'CSC', 'Widows'],
+      tagsHi: ['डिजिटल इंडिया', 'सीएससी', 'विधवा']
+    },
+    {
+      id: 10,
+      title: 'Combining Widow Pension with Ration & Ujjwala Yojana in UP',
+      titleHi: 'उत्तर प्रदेश में विधवा पेंशन के साथ राशन और उज्ज्वला योजना का लाभ',
+      summary: 'Discover how women can benefit from combining multiple government schemes for maximum support.',
+      summaryHi: 'जानें कि महिलाएं कई सरकारी योजनाओं का समन्वय करके अधिक लाभ कैसे ले सकती हैं।',
+      content: 'Detailed 500-word English content here...',
+      contentHi: 'यहाँ हिंदी में 500 शब्दों की पूरी सामग्री जाएगी...',
+      author: 'Neha Gupta',
+      authorHi: 'नेहा गुप्ता',
+      date: '2025-04-20',
+      category: 'Welfare',
+      categoryHi: 'कल्याण',
+      image: 'https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      tags: ['Widow', 'Ration', 'Ujjwala'],
+      tagsHi: ['विधवा', 'राशन', 'उज्ज्वला']
     }
   ];
 
@@ -201,8 +330,8 @@ export class ContentService {
       nameHi: 'रवि कुमार',
       role: 'Business Owner',
       roleHi: 'व्यवसाय मालिक',
-      comment: 'The service I received at Sudhir Jan Seva Kendra was exceptional. They helped me get my Aadhaar updated in just one visit!',
-      commentHi: 'सुधीर जन सेवा केंद्र पर मुझे मिली सेवा असाधारण थी। उन्होंने मुझे सिर्फ एक यात्रा में मेरा आधार अपडेट करवाने में मदद की!',
+      comment: 'The service I received at Sarthak Digital Seva was exceptional. They helped me get my Aadhaar updated in just one visit!',
+      commentHi: 'सार्थक डिजिटल सेवा पर मुझे मिली सेवा असाधारण थी। उन्होंने मुझे सिर्फ एक यात्रा में मेरा आधार अपडेट करवाने में मदद की!',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       rating: 5
     },

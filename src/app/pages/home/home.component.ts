@@ -50,7 +50,7 @@ import { LanguageService } from '../../core/services/language.service';
       <div class="container">
         <div class="about-content">
           <div class="about-image">
-            <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="About Sudhir Jan Seva Kendra">
+            <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="About Sarthak Digital Seva">
           </div>
           <div class="about-text">
             <h2>{{ translate('home.about.title') }}</h2>

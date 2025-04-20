@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ServiceItem } from '../../models/content.model';
 import { LanguageService } from '../../../core/services/language.service';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-service-card',
@@ -10,7 +11,7 @@ import { LanguageService } from '../../../core/services/language.service';
   imports: [CommonModule, RouterLink],
   template: `
     <div class="service-card card">
-      <div class="service-icon">{{ service.icon }}</div>
+      <div class="service-icon" [innerHTML]="getSanitizedIcon()"></div>
       <h3>{{ getCurrentLanguage() === 'en' ? service.title : service.titleHi }}</h3>
       <p>{{ getCurrentLanguage() === 'en' ? service.description : service.descriptionHi }}</p>
       <a routerLink="/services" [queryParams]="{service: service.id}" class="service-link">
@@ -75,7 +76,7 @@ import { LanguageService } from '../../../core/services/language.service';
 export class ServiceCardComponent {
   @Input() service!: ServiceItem;
   
-  constructor(private languageService: LanguageService) {}
+  constructor(private languageService: LanguageService, private sanitizer: DomSanitizer) {}
   
   getCurrentLanguage() {
     return this.languageService.getCurrentLanguage();
@@ -83,5 +84,8 @@ export class ServiceCardComponent {
   
   translate(key: string): string {
     return this.languageService.translate(key);
+  }
+  getSanitizedIcon(): SafeHtml {
+    return this.sanitizer.bypassSecurityTrustHtml(this.service.icon);
   }
 }

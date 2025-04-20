@@ -77,7 +77,7 @@ import { LanguageService } from '../../core/services/language.service';
               <div class="info-icon">📍</div>
               <div class="info-content">
                 <h3>{{ translate('contact.info.address') }}</h3>
-                <p>123 Main Street, City Center,<br>Delhi - 110001, India</p>
+                <p>Sarthak Digital Seva<br>Uttar Pradesh, India</p>
               </div>
             </div>
             
@@ -85,7 +85,7 @@ import { LanguageService } from '../../core/services/language.service';
               <div class="info-icon">📞</div>
               <div class="info-content">
                 <h3>{{ translate('contact.info.phone') }}</h3>
-                <p>+91 98765 43210<br>+91 12345 67890</p>
+                <p>+91 63930 26526</p>
               </div>
             </div>
             
@@ -93,7 +93,7 @@ import { LanguageService } from '../../core/services/language.service';
               <div class="info-icon">✉️</div>
               <div class="info-content">
                 <h3>{{ translate('contact.info.email') }}</h3>
-                <p>infosudhirjsk.com<br>supportsudhirjsk.com</p>
+                <p>sudhirtiwari6393026526&#64;gmail.com</p>
               </div>
             </div>
             

@@ -20,7 +20,7 @@ import { LanguageService } from '../../core/services/language.service';
       <div class="container">
         <div class="about-story">
           <div class="about-image">
-            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="About Sudhir Jan Seva Kendra">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="About  Sarthak Digital Seva">
           </div>
           
           <div class="about-content">

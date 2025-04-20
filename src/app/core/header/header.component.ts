@@ -14,7 +14,7 @@ import { LanguageService } from '../services/language.service';
         <div class="header-content">
           <div class="logo">
             <a routerLink="/">
-              <h1>Sudhir JSK</h1>
+              <h1> Sarthak Digital Seva</h1>
             </a>
           </div>
 

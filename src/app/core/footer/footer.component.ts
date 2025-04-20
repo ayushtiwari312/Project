@@ -13,9 +13,9 @@ import { LanguageService } from '../services/language.service';
       <div class="container">
         <div class="footer-top">
           <div class="footer-info">
-            <h2>Sudhir Jan Seva Kendra</h2>
+            <h2>Sarthak Digital Seva</h2>
             <p>
-              {{translate('footer.rights')}} &copy; {{ currentYear }} Sudhir Jan Seva Kendra
+              {{translate('footer.rights')}} &copy; {{ currentYear }} Sarthak Digital Seva
             </p>
           </div>
           
